@@ -3,33 +3,71 @@
     <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    <body >
-    <title>Pay with NanChat Demo</title>
-    <div class="pay" style="text-align: center; margin: 64px">
+
+    <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;">
+    <title>Nano Deep Link Example</title>
+    <h1 style="text-align: center; margin-top: 64px; color: #333;">
+      Nano Deep Link Example
+    </h1>
+    <div  style="text-align: center; margin: 64px; border: 1px solid #ccc; border-radius: 8px; width: 200px; margin-left: auto; margin-right: auto; padding-right: 16px; padding-left: 16px; background-color: white;">
+      <br/>
+      <br/>
     <a 
+    target="_blank"
     href="https://nanchat.com/?uri=nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
       <img width="200" src="https://bucket.nanwallet.com/logo/pay-with-nanchat.svg" alt="pay with nanchat" />
       </a> <br/>
-      <div style="margin-top: 16px">
+      <div style="margin-top: 32px">
       <a 
-      
+      target="_blank"
+      href="https://nanchat.com?uri=nanauth://sign?message=Login%20to%20example.com&url=https%3A%2F%2Fexample.com%2Fsignature">
+        <img width="200" src="https://bucket.nanwallet.com/logo/sign-in-with-nanchat.svg" alt="pay with natrium" />
+        </a>
+      </div>
+      <div style="margin-top: 32px; border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+      <a 
+      target="_blank"
       href="manta://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
-        <img width="200" src="https://natrium.io/assets/logo.svg" alt="pay with natrium" />
-        </a></div>
+        <img width="180" src="https://natrium.io/assets/logo.svg" alt="pay with natrium" />
+        </a>
+      </div>
+      <div style="margin-top: 32px; border: 1px solid #ccc; border-radius: 8px; padding: 13px;">
+      <a 
+      target="_blank"
+      style="text-decoration: none; color: #000;"
+      href="nano://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
+        Default Nano Wallet 
+        </a>
+      </div>
       <br/>
       <br/>
       </div>
-      <div>
-      Button HTML code: </br>
-      <code>&lt;a 
-    href=&quot;https://nanchat.com/?uri=nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000&quot;&gt;
-      &lt;img width=&quot;200&quot; src=&quot;https://bucket.nanwallet.com/logo/pay-with-nanchat.svg&quot; alt=&quot;pay with nanchat&quot; /&gt;
-      &lt;/a&gt;
-      <br/><br/>
-      &lt;a 
-      href=&quot;manta://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000&quot;&gt;
-        &lt;img width=&quot;200&quot; src=&quot;https://natrium.io/assets/logo.svg&quot; alt=&quot;pay with natrium&quot; /&gt;
-        &lt;/a&gt;
-      </code>
+      <hr style="border: 1px solid #ccc; margin: 64px;"/>
+      <div style="max-width: 700px; margin: 0 auto; text-align: left;">
+        Deep links URLs: </br></br>
+        Pay With NanChat: <a href="https://nanchat.com/?uri=nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
+          https://nanchat.com/?uri=nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000
+          </a>
+        <br/>
+        <br/>
+        Sign in With NanChat: <a href="https://nanchat.com?uri=nanauth://sign?message=Login%20to%20example.com&url=https%3A%2F%2Fexample.com%2Fsignature">
+          https://nanchat.com?uri=nanauth://sign?message=Login%20to%20example.com&url=https%3A%2F%2Fexample.com%2Fsignature
+          </a>
+        <br/>
+        <br/>
+        Natrium: <a href="manta://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
+          manta://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000
+          </a>
+        <br/>
+        <br/>
+        Default Nano Wallet: <a href="nano://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000">
+          nano://nano:nano_1banexkcfuieufzxksfrxqf6xy8e57ry1zdtq9yn7jntzhpwu4pg4hajojmq?amount=1000000000000000000000000000
+          </a>
+      <hr style="border: 1px solid #ccc; margin: 64px;"/>
+      <div style="text-align: center; margin-top: 0px; margin-bottom: 64px;">
+        <a href="https://github.com/Benskalz/nano-deep-links/" target="_blank">
+          View on GitHub
+        </a>
+        </div>
       </div>
     </body>
